@@ -89,9 +89,6 @@ body{
     padding-bottom: 40px;
 }
 
-.card h3{
-    
-}
 
 .announcements {
     grid-column: 2/3;
@@ -141,14 +138,40 @@ body{
 }
 
 .trending-card{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 10px;
     height: 300px;
     margin-right: 30px;
     box-shadow: 0px 5px 5px rgb(152, 152, 152);
+    padding: 10px;
 }
 
 .trending-card img{
-    height: 75px;
+    height: 80px;
+    width: 85px;
     border-radius: 50px;
+}
+
+.trending-card li{
+    list-style: none;
+}
+
+.trending-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex: auto;
+}
+.trending-row ul{
+    color: grey;
+}
+
+.trending-row li.tag{
+    color: black;
+    font-weight: 600;
 }
