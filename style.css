@@ -9,7 +9,7 @@ body{
     color: white;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1.5fr 5fr;
+    grid-template-rows: 1.2fr 5fr;
     height: 100vh;
 }
 .sidebar{
@@ -45,7 +45,7 @@ body{
     background-color: rgb(255, 255, 255);
     grid-column: 2/3;
     grid-row: 1/2;
-    box-shadow: 0px 5px 20px rgb(152, 152, 152);
+    box-shadow: 0px 5px 5px rgb(152, 152, 152);
     z-index: 1;
 }
 
@@ -77,13 +77,16 @@ body{
     border-left: 10px solid #4deb92;
     border-radius: 10px;
     background-color: white;
-    height: 200px;
+    height: 170px;
     padding: 20px;
     display: grid;
     grid-template-rows: 4fr 1fr;
+    box-shadow: 0px 5px 5px rgb(152, 152, 152);
 }
 
 .announcements {
+    grid-column: 2/3;
+    grid-row: 1/2;
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -91,4 +94,32 @@ body{
 .announcements h2{
     color: black;
     margin-bottom: 20px;
+}
+
+.announcement-card{
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    margin-right: 30px;
+    box-shadow: 0px 5px 5px rgb(152, 152, 152);
+}
+
+.trending{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.trending h2{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.trending-card{
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    margin-right: 30px;
+    box-shadow: 0px 5px 5px rgb(152, 152, 152);
 }
