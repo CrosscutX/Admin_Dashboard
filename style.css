@@ -175,3 +175,31 @@ body{
     color: black;
     font-weight: 600;
 }
+
+.header{
+    color: black;
+}
+
+.small-pfp{
+    height: 60px;
+    width: 65px;
+    border-radius: 50px;
+}
+
+.large-pfp{
+
+    border-radius: 50px;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.header button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(89, 155, 255);
+    border: none;
+    border-radius: 20px;
+}
