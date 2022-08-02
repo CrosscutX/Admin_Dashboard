@@ -177,29 +177,80 @@ body{
 }
 
 .header{
+    display: grid;
     color: black;
 }
 
-.small-pfp{
-    height: 60px;
-    width: 65px;
+.h-top-row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-row: 1/2;
+}
+
+.search{
+    border: none;
+    background-color: rgb(206, 206, 206);
+    grid-column: 2/3;
+    height: 40px;
     border-radius: 50px;
 }
 
-.large-pfp{
-
-    border-radius: 50px;
+.icon-1 {
+    justify-self: center;
+    grid-column: 1/2;
 }
 
-.icon {
+.icon-2{
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.icon-1 ,.icon-2  {
     height: 30px;
     width: 30px;
 }
 
+.small-pfp{
+    grid-column: 4/5;
+    height: 60px;
+    width: 65px;
+    border-radius: 50px;
+    justify-self: center;
+}
+
+.username{
+    font-weight: bold;
+    grid-column: 5/6;
+}
+
+.h-bottom-row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-row: 2/3;
+}
+
+.large-pfp{
+    justify-self: center;
+    height: 85px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.button-group{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
 .header button{
     height: 40px;
-    width: 100px;
+    width: 120px;
     background-color: rgb(89, 155, 255);
+    color: white;
     border: none;
     border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
 }
